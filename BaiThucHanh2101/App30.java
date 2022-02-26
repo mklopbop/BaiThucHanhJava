@@ -4,7 +4,7 @@ public class App30 {
 public static void main(String[] args) {
     int n, soDu, tong = 0 ;
     Scanner scanner = new Scanner(System.in);
-    System.out.println = ("nhap vao so nguyen duong : ")
+    System.out.println = ("nhap vao so nguyen duong : ");
     n = scanner.nextLine();
     while(n>0){
         soDu = n % 10 ;

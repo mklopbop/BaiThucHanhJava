@@ -2,12 +2,13 @@ package shapes;
 import java.util.Scanner;
 public class HinhVuong extends HinhChuNhat{
     public HinhVuong(){
-        ten = "Hinh Vuong";
+        tem = "Hinh Vuong";
 
     }
     public void nhapCanh(){
         System.out.println("Canh =");
-        Scanner scanner = new  Scanner(System.in);
-        dai = rong = scanner.nextFloat();
+        try (Scanner scanner = new  Scanner(System.in)) {
+            dai = rong = scanner.nextFloat();
+        }
      }
 }

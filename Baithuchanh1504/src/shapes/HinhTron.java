@@ -4,12 +4,13 @@ import java.util.Scanner;
 public class HinhTron extends HinhHoc {
     public float banKinh;
     public HinhTron(){
-        ten ="Hinh Tron";
+        tem ="Hinh Tron";
     }
     public void nhapBanKinh() {
         System.out.println("Ban Kinh =");
-        Scanner scanner = new Scanner(System.in);
-        banKinh = scanner.nextFloat();
+        try (Scanner scanner = new Scanner(System.in)) {
+            banKinh = scanner.nextFloat();
+        }
 
     }
     public void tinhChuVi() {
